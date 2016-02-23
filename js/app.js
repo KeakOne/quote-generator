@@ -17,4 +17,10 @@ function getQuote() {
 function generateQuote(num){
 	$("#quoteGenerator").empty();
 	$("#quoteGenerator").append(num);
+
+var strLink = "http://twitter.com/home/?status=" + num;
+document.getElementById("tweetThislink").setAttribute("href",strLink);
 }
+
+
+
